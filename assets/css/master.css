@@ -43035,8 +43035,8 @@ a.dn-link-btn:hover span .arry2 {
 }
 
 .footer-widgets-wrapper {
-	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
+	display: flex;
+	flex-direction: column;
 	gap: 20px;
 }
 
