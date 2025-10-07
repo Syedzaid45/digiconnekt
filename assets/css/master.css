@@ -43035,9 +43035,26 @@ a.dn-link-btn:hover span .arry2 {
 }
 
 .footer-widgets-wrapper {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: 20px;
+}
+
+
+/* Tablet view (max-width: 1024px) */
+@media (max-width: 1024px) {
+	.footer-widgets-wrapper {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+/* Mobile view (max-width: 768px) */
+@media (max-width: 768px) {
+	.footer-widgets-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
 }
 
 .footer-widgets.contact {
