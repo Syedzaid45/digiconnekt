@@ -44018,3 +44018,143 @@ article.post .post-date .day {
 .radio_grp input[type="radio"]:checked {
 	background-color: #F97316;
 }
+
+
+
+
+
+
+
+
+.site-audit-section {
+  background-color: #0d0d0d;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.audit-heading {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.audit-heading .highlight {
+  color: #ff6a00;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6a00, #ff3c00);
+  border-radius: 2px;
+}
+
+.audit-input {
+  background: transparent;
+  border: 1px solid #ff6a00;
+  border-radius: 6px;
+  color: #fff;
+  padding: 12px 15px;
+}
+
+.audit-input::placeholder {
+  color: #bfbfbf;
+}
+
+.audit-input:focus {
+  border-color: #ff3c00;
+  box-shadow: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.audit-btn {
+  background: linear-gradient(90deg, #ff6a00, #ff3c00);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.audit-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Make sure it looks great on small screens */
+@media (max-width: 768px) {
+  .audit-heading {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+.process-section {
+  background-color: black;
+}
+
+.steps {
+  position: relative;
+}
+
+.step {
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+.step .circle {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #FF6A00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.step::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  height: 4px;
+  background-color:#FF6A00;
+  z-index: 1;
+}
+
+.step:last-child::after {
+  display: none;
+}
+
+.step.active .circle {
+  background-color: #FF6A00;
+  color: #fff;
+}
+
+.step-label {
+  margin-top: 10px;
+  font-weight: 600;
+  color:#FF6A00;
+}
+
+.step-content {
+  background: #fff;
+  color: #0d6683;
+  transition: all 0.3s ease;
+}
+
+.content-title {
+  font-weight: 700;
+}
